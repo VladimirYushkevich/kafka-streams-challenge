@@ -1,0 +1,12 @@
+groups:
+- name: example
+  rules:
+
+  - alert: KafkaStreamsJobMissing
+    expr: absent(kafka_streams_app_info) == 1
+    for: 30s
+    labels:
+        severity: warning
+    annotations:
+        summary: KafkaStreams job is missing (instance {{ $labels.instance }})
+        description: "A KafkaStreams job has disappeared\n  VALUE = {{ $value }}\n  LABELS = {{ $labels }}"
