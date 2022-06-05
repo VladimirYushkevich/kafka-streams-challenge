@@ -12,7 +12,9 @@ The Kafka Streams job should emit an event to topic "output" if for an Id there 
 within 1 minute and no further START-Event for at least 1 more minute. The event in the output topic should have the 
 Id (as text) as value.
 
-The requirements are listed below. Beside those requirements you are free to solve the problem as you prefer (i.e. it is your decision which tools to use) with the restriction that your result needs to be verifiable by us (don't use tools we can't access).
+The requirements are listed below. Beside those requirements you are free to solve the problem as you prefer 
+(i.e. it is your decision which tools to use) with the restriction that your result needs to be verifiable 
+by us (don't use tools we can't access).
 
 ## Requirements
 *AS* BA Team
@@ -40,7 +42,7 @@ brew install kcat
 ```
 Produce message(I had to enter it line by line :( ):
 ```
-kcat -b localhost:29092 \                                                                                                                                                                                               ✔  02:02:21
+kcat -b localhost:29092 \
 -t input \
 -D/ \
 -P <<EOF
