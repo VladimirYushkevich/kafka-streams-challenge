@@ -71,3 +71,8 @@ To see effect of applied rule, you can produce for example not parseable message
 <Event>  ::= wrong
 ```
 We can also create a general kafka alert when consumer lag is growing (You can see it from `kafka-lag-exporter` dashboard).
+
+## Other
+There is a nice [tool](https://github.com/zz85/kafka-streams-viz) to visualize KStreams topology. My looks as follows :):
+
+![topology](docs/images/topology.png)

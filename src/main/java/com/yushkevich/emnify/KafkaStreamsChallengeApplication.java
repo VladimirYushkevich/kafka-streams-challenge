@@ -64,7 +64,6 @@ public class KafkaStreamsChallengeApplication {
 
     Runnable punctuatorTask =
         () -> {
-          System.out.println("Running...punctuator");
           producer.send(
               new ProducerRecord<>(INPUT_TOPIC, null, StringUtils.buildMessage(-1, "PUNCTUATOR")));
         };
